@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- Falta una etiqueta raíz -->
+<madre>
+    <hijo1>
+        <nombre>Juan</nombre>
+        <apellido>Pérez</apellido>
+    </hijo1>
+    <hijo2>
+        <nombre>Luis</nombre>
+        <apellido>Garcí­a</apellido>
+    </hijo2>
+</madre>

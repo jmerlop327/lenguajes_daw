@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Dentro de la etiqueta hijo2, tenemos la etiqueta apellido mal formada. -->
+<padre>
+    <hijo1>
+        <nombre>Juan<apellido>Pérez</apellido>
+        </nombre>
+    </hijo1>
+    <hijo2>
+    <!-- Re-order the tags to maintain the tree structure of the XML-->
+        <nombre>Luis<apellido>García</apellido>
+        </nombre>
+    </hijo2>
+</padre>

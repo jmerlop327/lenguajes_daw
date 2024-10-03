@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<agenda>
+    <entrada>
+        <!-- Faltaba la etiqueta de cierre de <nombre-completo>
+         Se añade al final de la siguiente línea -->
+        <nombre-completo>Marta Elena Tablada</nombre-completo>
+    </entrada>
+</agenda>

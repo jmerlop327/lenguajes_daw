@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- no tiene etiqueta raiz
+ direccion se cierra 2 veces
+ e-mail es una etiqueta vacia
+ formateo
+  -->
+  <datos_personales>
+    <nombre-completo>Marta Elena Tablada</nombre-completo>
+    <direccion>
+        <calle> Avda Los Castros</calle>
+        <ciudad>Santander</ciudad>
+        <codigo-postal>39005</codigo-postal>
+        <region>Cantabria</region>
+        <pais>España</pais>
+    </direccion>
+    <tel preferente="true"> 942201363</tel>
+    <correo-e href="tabladam@unican.es"/>
+</datos_personales>
