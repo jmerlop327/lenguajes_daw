@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recetas>
+    <receta id="1">
+        <nombre>Sopa de cebolla</nombre>
+        <ingredientes>
+		<ingrediente>
+			<nombre>cebollas</nombre>
+			<cantidad unidad="kg">1</cantidad>
+		</ingrediente>
+		<ingrediente>
+			<nombre>caldo de res</nombre>
+			<cantidad unidad="l">2</cantidad>
+		</ingrediente>
+		<ingrediente>
+			<nombre>pan tostado</nombre>
+			<cantidad unidad="rebanada"/>
+		</ingrediente>
+		<ingrediente>
+			<nombre>pimienta</nombre>
+			<!-- No incluye la etiqueta cantidad porque no se indica
+			también podríamos incluir la etiqueta vacía <cantidad/> -->
+		</ingrediente>
+		<!-- incluir resto de ingredientes -->
+	</ingredientes>
+	<!-- También se podría poner como atributo de receta o del nombre de la receta -->
+        <num_comensales>4</num_comensales>
+        <proceso>
+		<paso orden="1">
+			<tiempo/>
+			<instruccion>Pelar y cortar las cebollas en rodajas finas</instruccion>
+		</paso>
+		<paso orden="2">
+			<tiempo/>
+			<instruccion>Sofreírlas con la mantequilla, sal y pimienta a fuego lento hasta que estén translúcidas sin dorarse</instruccion>
+		</paso>
+		<!-- incluir resto de pasos -->
+		<paso orden="5">
+			<tiempo unidad="minuto">15</tiempo>
+			<instruccion>Dejar hervir a fuego lento</instruccion>
+		</paso>
+		<!-- incluir resto de pasos -->
+	</proceso>
+    </receta>
+</recetas>
