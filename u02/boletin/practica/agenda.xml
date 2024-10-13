@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda>
+    <contacto>
+      <nombre>Manuel</nombre>
+      <apellidos>Gomez Gomez</apellidos>
+      <direccion>
+          <calle>Geranio</calle>
+          <numero>4</numero>
+          <piso>1A</piso>
+          <cp>21001</cp>
+          <ciudad>Huelva</ciudad>
+          <provincia>Huelva</provincia>
+      </direccion>
+      <telefonos>
+          <tel tipo="casa">959100100</tel>
+          <tel tipo="movil">600100100</tel>
+          <tel tipo="trabajo">959200200</tel>
+      </telefonos>
+    </contacto>
+  </agenda>

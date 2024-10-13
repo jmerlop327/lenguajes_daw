@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web_service>
+	<program>Apache</program>
+	<fecha_creacion>10/10/2021</fecha_creacion>
+	<fecha_actualizacion>20/10/2021</fecha_actualizacion>
+	<hosting CIF="B123456789">
+		<nombre>Webempresa</nombre>
+		<precio moneda="euro">90.5</precio>
+	</hosting>
+	<virtual_servers>
+		<virtual_server id="123-ABCDE">
+			<dominio>https://www.discoduroonline.es</dominio>
+			<directorio>/home/discoduro_ol</directorio>
+			<modo_seguro>true</modo_seguro>
+			<incidencias>
+				<incidencia>
+					<descripcion>Incidente 1</descripcion>
+					<solucion>Solucion 1</solucion>
+				</incidencia>
+			</incidencias>
+		</virtual_server>
+		<virtual_server  id="456-FGHIJ">			
+			<dominio>https://www.google.es</dominio>
+			<directorio>/home/google</directorio>
+			<modo_seguro>false</modo_seguro>
+		</virtual_server>
+	</virtual_servers>
+</web_service>

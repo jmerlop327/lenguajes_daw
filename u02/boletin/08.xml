@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculum>
+	<datos_personales>
+		<nombre></nombre>
+		<apellidos></apellidos>
+		<fecha_nac></fecha_nac>
+		<lugar_nac></lugar_nac>
+		<nif></nif>
+		<imagen></imagen>
+	<!-- Av/ Avenida del mar 84. 1º escalera derecha puerta C -->
+		<domicilio>
+			<via tipo="avda">Avenida del Mar</via>
+			<num>84</num>
+			<piso>1</piso>
+			<puerta>C</puerta>
+			<escalera>derecha</escalera>
+		</domicilio>
+		<telefono tipo="móvil">678789087</telefono>
+		<telefono tipo="fijo">978789087</telefono>
+		<red_social nombre="facebook">http://www.facebook.com/jfmera</red_social>
+		<red_social nombre="instagram">@jfmera</red_social>
+	</datos_personales>
+	<formacion_academica>
+		<estudio>
+			<nombre>bachillerato</nombre>
+			<lugar>IES Trafalgar</lugar>
+			<ciudad>Barbate</ciudad>
+			<fecha_ini></fecha_ini>
+			<fecha_fin></fecha_fin>
+		</estudio>
+		<estudio>
+			<nombre>DAW</nombre>
+			<lugar>IES Trafalgar</lugar>
+			<ciudad>Barbate</ciudad>
+			<fecha_ini>16/09/2024</fecha_ini>
+			<fecha_fin>20/06/2026</fecha_fin>
+		</estudio>
+		<idiomas>
+			<idioma>
+				<nombre>Español</nombre>
+				<materno/>
+				<exp_escrita>alto</exp_escrita>
+				<comp_escrita>medio</comp_escrita>
+				<exp_oral>medio</exp_oral>
+				<comp_oral>alto</comp_oral>
+			<idioma>
+		</idiomas>
+	</formacion_academica>
+</curriculum>

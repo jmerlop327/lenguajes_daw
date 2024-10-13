@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ciclos>
+    <ciclo>
+        <nombre siglas="DAW">Desarrollo de aplicaciones web</nombre>
+        <modulos>
+            <modulo>
+                <nombre>Lenguajes de Marcas y Sistemas de Gestión de Información</nombre>
+                <horasSemanales>3</horasSemanales>
+                <obligatorio/>
+                <periodo>
+                    <inicio>2024-09-16</inicio>
+                    <fin>2025-06-20</fin>
+                </periodo>
+                <estudiantes>
+                    <estudiante>
+                        <nombre>Ana Fernández Gutiérrez</nombre>
+                        <dni>16965696L</dni>
+                        <telefono>789654321</telefono>
+                        <email>ana.fdezgtrrez@hotmail.com</email>
+                        <direccion>
+                            <calle>Calle El Percebe, 13</calle>
+                            <ciudad>Chipiona</ciudad>
+                            <codigoPostal>11550</codigoPostal>
+                        </direccion>
+                        <ausencias/>
+                        <calificacion>No disponible</calificacion>
+                    </estudiante>
+                    <estudiante>
+                        <nombre>Pepe Grillo Márquez</nombre>
+                        <dni>98765432H</dni>
+                        <telefono>656566555</telefono>
+                        <email>yhyh@yahoo.com</email>
+                        <direccion>
+                            <calle>Avenida El Pez, 5</calle>
+                            <ciudad>Rota</ciudad>
+                            <codigoPostal>11520</codigoPostal>
+                        </direccion>
+                        <ausencias/>
+                        <calificacion>Aprobado</calificacion>
+                    </estudiante>
+                </estudiantes>
+            </modulo>
+        </modulos>
+    </ciclo>
+</ciclos>
