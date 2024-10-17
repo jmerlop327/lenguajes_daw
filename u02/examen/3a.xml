@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Faltan las comillas de la versión -->
+<!--Falta etiqueta raíz-->
+<estudiantes>
+    <!-- Faltan las comillas de los atributos -->
+    <estudiante id="1">
+        <nombre>Juan Rodríguez</nombre>
+        <edad>21</edad>
+        <curso>Ingeniería Informática</curso>
+        <calificacion>90</calificacion>
+    </estudiante>
+    <estudiante id="2">
+        <nombre>Manuel López</nombre>
+        <edad>22</edad>
+        <curso>
+            <primero/>
+            Ingeniería Eléctrica
+        </curso>
+        <!--no es recomendable usar etiquetas con tilde-->
+        <calificacion/>
+    </estudiante>
+    <estudiante id="3">
+        <nombre>Antonio Miranda</nombre>
+        <edad>20</edad>
+        <curso>
+            <segundo>F</segundo>
+            Física
+        </curso>
+        <calificacion>95</calificacion>
+        <!--la etiqueta de cierre de estudiante tiene la barra al final-->
+    </estudiante>
+</estudiantes>

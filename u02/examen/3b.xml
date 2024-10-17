@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viajes>
+    <destino pais="Francia">
+        <ciudad>París</ciudad>
+        <!-- falta el cierre de la etiqueta destino-->
+    </destino>
+    <!-- La etiqueta hotel se está cerrando en su etiqueta de apertura
+     y también le falta el nombre del atributo.-->
+    <hotel nombre="Le Grand">
+        <categoria>5 estrellas</categoria>
+        <habitacion tipo="doble">
+            <vistas>ciudad</vistas>
+            <precio>250</precio>
+        </habitacion>
+    </hotel>
+    <actividad>Visita a la Torre Eiffel</actividad>
+    <actividad2>Crucero por el Sena</actividad2>
+</viajes>

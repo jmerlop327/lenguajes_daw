@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos>
+    <vehiculo>
+        <marca>Seat</marca>
+        <modelo>Ibiza</modelo>
+        <f_fabricacion dia="10" mes="10" anio="2022"></f_fabricacion>
+        <lugar_fabricacion pais="España">
+            <localidad>Tarragona</localidad>
+        </lugar_fabricacion>
+        <unidades>220</unidades>
+    </vehiculo>
+    <vehiculo>
+        <marca>toyota</marca>
+        <modelo>prius+</modelo>
+        <f_fabricacion dia="13" mes="12" anio="2000"></f_fabricacion>
+        <lugar_fabricacion pais="Japón">
+            <localidad>Tokio</localidad>
+        </lugar_fabricacion>
+        <unidades>105</unidades>
+    </vehiculo>
+</vehiculos>
