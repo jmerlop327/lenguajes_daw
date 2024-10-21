@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE asignaturas SYSTEM "asignaturas.dtd">
+<!-- Crear el archivo asignaturas.dtd que define este documento -->
+<asignaturas>
+  	<asignatura tipo="optativa">
+		<codigo>01</codigo>
+		<nom_asig>Lenguaje de marcas</nom_asig>
+		<creditos>10</creditos>
+		<carrera>Ingenieria Informatica</carrera>
+		<curso>1º</curso>
+		<alumnos_matr>18</alumnos_matr>
+	</asignatura>
+	
+	<asignatura tipo="obligatoria">
+		<codigo>02</codigo>
+		<nom_asig>Programacion</nom_asig>
+		<creditos>15</creditos>
+		<carrera>Ingenieria Informatica</carrera>
+		<curso>1º</curso>
+	</asignatura>
+	
+	<asignatura tipo="obligatoria">
+		<codigo>03</codigo>
+		<nom_asig>Seguridad</nom_asig>
+		<creditos>15</creditos>
+		<carrera>Ingenieria Informatica</carrera>
+		<carrera>Ingenieria Química</carrera>
+		<curso>2º</curso>
+	</asignatura>
+</asignaturas>
