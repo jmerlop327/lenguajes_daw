@@ -1,0 +1,9 @@
+<!ELEMENT asignaturas (asignatura*)>
+<!ELEMENT asignatura (codigo,nom_asig,creditos, carrera+,curso,alumnos_matr?)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT nom_asig (#PCDATA)>
+<!ELEMENT creditos (#PCDATA)>
+<!ELEMENT carrera (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>
+<!ELEMENT alumnos_matr (#PCDATA)>
+<!ATTLIST asignatura tipo CDATA #REQUIRED>

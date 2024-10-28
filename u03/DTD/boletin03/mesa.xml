@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mesa [
+<!ELEMENT mesa ANY>
+<!ELEMENT material (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+]>
+<mesa>La mesa de <material>madera</material> es de color <color>marrón</color>.</mesa>
+<!-- SOLUCIÓN
+El elemento mesa puede tener contenido mixto. Pero material solo podría ser texto.
+-->

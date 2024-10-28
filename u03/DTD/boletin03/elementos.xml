@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE elementos [
+<!ELEMENT elementos (pcdata*, any+, vacio)>
+<!ELEMENT pcdata (#PCDATA)>
+<!ELEMENT any ANY>
+<!ELEMENT vacio EMPTY>
+]>
+<elementos>
+    <any/>
+    <vacio/>
+</elementos>
+<!-- SOLUCIÓN
+Existe un error de sintaxis, tanto ANY como EMPTY se escriben sin paréntesis
+-->

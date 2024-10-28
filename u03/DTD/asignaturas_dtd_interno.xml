@@ -1,5 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE asignaturas SYSTEM "./asignaturas.dtd">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE asignaturas [
+<!ELEMENT asignaturas (asignatura*)>
+<!ELEMENT asignatura (codigo,nom_asig,creditos, carrera+,curso,alumnos_matr?)>
+<!ATTLIST asignatura tipo (optativa|obligatoria) #REQUIRED>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT nom_asig (#PCDATA)>
+<!ELEMENT creditos (#PCDATA)>
+<!ELEMENT carrera (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>
+<!ELEMENT alumnos_matr (#PCDATA)>
+]>
 <!-- Crear el archivo asignaturas.dtd que define este documento -->
 <asignaturas>
   	<asignatura tipo="optativa">

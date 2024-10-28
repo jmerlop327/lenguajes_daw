@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE caballo [
+<!ELEMENT caballo (nombre, raza, edad)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT raza (#PCDATA)>
+<!ELEMENT edad EMPTY>
+]>
+<caballo>
+    <nombre>Silvestre</nombre>
+    <raza>Morgan</raza>
+    <edad/>
+</caballo>
+<!-- SOLUCIÓN
+El elemento edad debe aparecer como una etiqueta de autocierre
+-->
