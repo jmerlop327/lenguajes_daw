@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="empresas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="empresa" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:attribute name="nombre" type="xs:string"/>
+                        <xs:attribute name="fecha_de_fundacion" t>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

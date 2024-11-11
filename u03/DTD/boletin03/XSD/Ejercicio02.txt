@@ -1,0 +1,28 @@
+Ejemplos de definición de etiquetas simples:
+
+
+<ciudad>Roma</ciudad>
+<xs:element name="ciudad" type="xs:string"/>
+
+
+<fecha-de-nacimiento>1996-12-18</fecha-de-nacimiento>
+<xs:element name="fecha-de-nacimiento" type="xs:date"/>
+
+
+<hora>18:29:45</hora>
+<xs:element name="hora" type="xs:time"/>
+
+
+<nota>7.5</nota>
+<xs:element name="nota">
+    <xs:simpleType>
+        <xs:restriction base="xs:float">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+
+<apto>true</apto>
+<xs:element name="apto" type="xs:boolean"/>

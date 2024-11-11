@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="./empresas.xsd">
+<empresa nombre="Apple" fecha_de_fundacion="1976"/>
+<empresa nombre="Google"/>
+<empresa nombre="Microsoft" fecha_de_fundacion="1975"/>
+</empresas>

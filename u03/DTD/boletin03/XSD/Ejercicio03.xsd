@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ejercicio_03">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="puertaCerrada" type="xs:boolean" default="false"/>
+                <xs:element name="ventanaAbierta" type="xs:boolean" fixed="true"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
