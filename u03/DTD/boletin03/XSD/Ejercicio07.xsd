@@ -1,0 +1,9 @@
+<!--TROZO DE XSD QUE CORRESPONDE AL EJERCICIO-->
+<xs:simpleType name="tipoDeVehiculo">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="barco"/>
+        <xs:enumeration value="bicicleta"/>
+        <xs:enumeration value="coche"/>
+        <xs:enumeration value="tren"/>
+    </xs:restriction>
+</xs:simpleType>

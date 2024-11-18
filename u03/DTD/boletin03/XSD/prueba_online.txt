@@ -1,0 +1,13 @@
+<!-- PARA PROBAR EN https://www.liquid-technologies.com/online-xsd-validator -->
+<!-- PARTE XML -->
+<prueba>lZ</prueba>
+<!-- PARTE XSD -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="prueba">
+        <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^0-9]Z"/>
+        </xs:restriction>
+    </xs:simpleType>
+      </xs:element>
+</xs:schema>
