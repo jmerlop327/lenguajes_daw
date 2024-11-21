@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prueba_regex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="./PruebaRegex.xsd">
+<!-- TANTOS VALORES COMO QUERAMOS PROBAR -->
+<valor>AbCdEfGhIjK</valor>
+<valor>AbCdEf</valor>
+<valor>HoLa</valor>
+<valor>AdIoS</valor>
+<valor>A</valor>
+<valor>AyO</valor>
+<valor>ArAAf</valor>
+</prueba_regex>

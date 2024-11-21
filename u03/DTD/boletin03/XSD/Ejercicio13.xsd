@@ -1,0 +1,5 @@
+<xs:simpleType>
+    <xs:restriction base="xs:string">
+        <xs:pattern value="([A-Z][a-z])*[A-Z]?"/>
+    </xs:restriction>
+</xs:simpleType>
