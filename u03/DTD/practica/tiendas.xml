@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tiendas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./tiendas.xsd">
+    <tienda id="a1" apertura="2022-01-10" alta_datos="2022-01-12">
+        <nombre_t>Sport Bici</nombre_t>
+        <dueno>
+            <nombre_d>Helena Piñero</nombre_d>
+            <dni>44434343J</dni>
+            <contacto>
+                <tlf>655432865</tlf>
+                <tlf>755494382</tlf>
+                <tlf>955674312</tlf>
+            </contacto>
+            <direccion>Av Andalucía 3 Huelva</direccion>
+        </dueno>
+        <almacen>
+            <stock cod="b1" tipo="bicicleta">
+                <cantidad>10</cantidad>
+                <precio>200</precio>
+                <moneda>Euros</moneda>
+            </stock>
+            <stock cod="b2" tipo="rueda">
+                <cantidad>30</cantidad>
+                <precio>25</precio>
+                <moneda>Euros</moneda>
+            </stock>
+            <stock cod="b3" tipo="frenos">
+                <cantidad>5</cantidad>
+                <precio>30</precio>
+                <moneda>Euros</moneda>
+            </stock>
+        </almacen>
+        <socios>
+            <socio num="001s-ZFM-2022" registro="2022-02-03">
+                <nombre_s>June Molina</nombre_s>
+                <reservas>
+                    <reserva cod_r="001r" referencia="b1"/>
+                    <reserva cod_r="002r" referencia="b2"/>
+                </reservas>
+            </socio>
+            <socio num="002s-AJD-2022" registro="2022-02-03">
+                <nombre_s>Joaquim Castellanos</nombre_s>
+                <telefono>555438189</telefono>
+            </socio>
+        </socios>
+    </tienda>
+    <tienda id="a2">
+        <nombre_t>Bicicletas Huelva</nombre_t>
+        <dueno>
+            <nombre_d>Sagrario Carrión</nombre_d>
+            <dni>12341238X</dni>
+            <oficina>Av Andalucía 3 Huelva</oficina>
+        </dueno>
+        <almacen>
+            <stock cod="b4" tipo="sillín">
+                <cantidad>99</cantidad>
+                <precio>30</precio>
+                <moneda>Euros</moneda>
+            </stock>
+            <stock cod="b5" tipo="casco">
+                <cantidad>55</cantidad>
+                <precio>55</precio>
+                <moneda>Euros</moneda>
+            </stock>
+        </almacen>
+        <socios>
+            <socio num="003s-QWE-2022" registro="2022-01-02">
+                <nombre_s>June Molina</nombre_s>
+            </socio>
+            <socio num="004s-IOJ-2022" registro="2022-03-03">
+                <nombre_s>Joaquim Castellanos</nombre_s>
+                <telefono>555438189</telefono>
+                <reservas>
+                    <reserva cod_r="003r" referencia="b5"/>
+                    <reserva cod_r="004r" referencia="b5"/>
+                </reservas>
+            </socio>
+        </socios>
+    </tienda>
+</tiendas>

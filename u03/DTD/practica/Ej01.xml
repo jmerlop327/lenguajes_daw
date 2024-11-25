@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE info_sms SYSTEM "./info_sms.dtd">
+<info_sms>
+    <sms>
+        <telefono>955 55 76 55</telefono>
+        <fecha> 1/7/2011 </fecha>
+        <hora>23:55</hora>
+        <mensaje>Hola, quedamos a las 10:00?</mensaje>
+    </sms>
+    <sms>
+        <telefono>745 1536 11</telefono>
+        <fecha> 22/9/2011 </fecha>
+        <hora> 15:05</hora>
+        <mensaje>Descarga Arkanoid http://download.arcanoid.com/win</mensaje>
+        <spam/>
+    </sms>
+    <sms>
+        <telefono>842 35 11 OO</telefono>
+        <fecha> 10/11/2011 </fecha>
+        <hora>09:22</hora>
+        <mensaje>Gracias por la información, saludos</mensaje>
+    </sms>
+</info_sms>

@@ -1,0 +1,7 @@
+<!ELEMENT info_sms (sms)*>
+<!ELEMENT sms (telefono, fecha, hora, mensaje, spam?)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT mensaje (#PCDATA)>
+<!ELEMENT spam EMPTY>

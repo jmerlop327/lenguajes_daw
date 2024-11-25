@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<!DOCTYPE agenda [
+    <!ELEMENT agenda (contacto*)>
+    <!ELEMENT contacto (nombre, apellidos, direccion, telefonos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT direccion (calle, numero, piso, cp, ciudad, provincia)>
+    <!ELEMENT telefonos (tel+)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT numero (#PCDATA)>
+    <!ELEMENT piso (#PCDATA)>
+    <!ELEMENT cp (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT provincia (#PCDATA)>
+    <!ELEMENT tel (#PCDATA)>
+    <!ATTLIST tel tipo (casa|movil|trabajo) #REQUIRED>
+
+]>
+<agenda>
+    <contacto>
+        <nombre>Manuel</nombre>
+        <apellidos>Gomez Gomez</apellidos>
+        <direccion>
+            <calle>Geranio</calle>
+            <numero>4</numero>
+            <piso>1A</piso>
+            <cp>21001</cp>
+            <ciudad>Huelva</ciudad>
+            <provincia>Huelva</provincia>
+        </direccion>
+        <telefonos>
+            <tel tipo="casa">959100100</tel>
+            <tel tipo="movil">600100100</tel>
+            <tel tipo="trabajo">959200200</tel>
+        </telefonos>
+    </contacto>
+</agenda>

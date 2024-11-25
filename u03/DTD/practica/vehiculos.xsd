@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="vehiculos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="vehiculo" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="marca" type="xs:string"/>
+              <xs:element name="modelo" type="xs:string"/>
+              <xs:element name="f_fabricacion">
+                <xs:complexType>
+                  <xs:attribute name="dia" type="xs:integer" use="required"/>
+                  <xs:attribute name="mes" type="xs:integer" use="required"/>
+                  <xs:attribute name="anio" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="2000"/>
+                        <xs:maxInclusive value="2030"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="lugar_fabricacion">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="localidad">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Europa"/>
+                          <xs:enumeration value="EEUU"/>
+                          <xs:enumeration value="Asia"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="pais" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z]{2}"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="unidades" type="xs:integer"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
