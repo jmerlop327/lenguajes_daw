@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(140, 142, 140);
+    color: lightsalmon;
+}
+
+hr {
+    color: red;
+    width: 20%;
+    size: 4px;
+    background-color: tomato;
+}
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: azure;
+}
+
+h1 {
+    color: aquamarine;
+}
+p span {
+    text-decoration: underline;
+}

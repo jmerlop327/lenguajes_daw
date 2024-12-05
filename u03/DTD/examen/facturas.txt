@@ -1,0 +1,49 @@
+<facturas>
+    <factura id="1">
+        <recibo>
+            <cod_receptor>333-AZT</cod_receptor>
+            <producto manejo="fragil">
+                <nombre>Kiwi a granel</nombre>
+                <fragil/>
+                <cantidad unidad="kg">
+                    <total>125.5</total>
+                </cantidad>
+            </producto>
+        </recibo>
+        <entrega>
+            <distancia>468</distancia>
+            <coste>1238.45</coste>
+        </entrega>
+    </factura>
+    <factura id="2">
+        <recibo>
+            <cod_receptor>340-KJM</cod_receptor>
+            <producto>
+                <nombre>Patata</nombre>
+                <cantidad unidad="kg">
+                    <total>98</total>
+                </cantidad>
+            </producto>
+            <producto manejo="fragil">
+                <nombre>Mandarina cesta</nombre>
+                <cantidad unidad="unidad">
+                    <total>200</total>
+                </cantidad>
+            </producto>
+            <producto>
+                <nombre>Champiñones laminados bandeja</nombre>
+                <cantidad unidad="unidad">
+                    <total>70</total>
+                </cantidad>
+            </producto>
+        </recibo>
+        <entrega>
+            <distancia>81</distancia>
+            <coste>721.3</coste>
+        </entrega>
+        <entrega>
+            <distancia>81</distancia>
+            <coste>102</coste>
+        </entrega>
+    </factura>
+</facturas>
