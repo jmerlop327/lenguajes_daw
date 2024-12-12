@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración de Etiquetas HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-areas: 
+                "header header"
+                "nav nav"
+                "main aside"
+                "footer footer";
+            gap: 10px;
+        }
+        header {
+            grid-area: header;
+            background: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            grid-area: nav;
+            background: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            grid-area: main;
+            padding: 20px;
+        }
+        aside {
+            grid-area: aside;
+            background: #e9ecef;
+            padding: 20px;
+            border-left: 5px solid #007BFF;
+        }
+        footer {
+            grid-area: footer;
+            background: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input, textarea, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        aside img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <h1>Ejemplo de Etiquetas HTML</h1>
+        <p>Esta página demuestra las etiquetas más comunes de HTML.</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <a href="#cabeceras">Cabeceras</a> |
+        <a href="#listas">Listas</a> |
+        <a href="#formulario">Formulario</a> |
+        <a href="#footer">Footer</a>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Cabeceras -->
+        <section id="cabeceras">
+            <h2>Cabeceras</h2>
+            <h1>H1 Título Principal</h1>
+            <h2>H2 Subtítulo</h2>
+            <h3>H3 Encabezado Secundario</h3>
+            <h4>H4 Encabezado Más Pequeño</h4>
+        </section>
+
+        <!-- Párrafos y Enlaces -->
+        <section id="parrafos-enlaces">
+            <h2>Párrafos y Enlaces</h2>
+            <p>Este es un párrafo de ejemplo. Aquí puedes incluir <a href="https://www.example.com" target="_blank">enlaces externos</a> o <a href="#cabeceras">anclas internas</a>.</p>
+        </section>
+
+        <!-- Listas -->
+        <section id="listas">
+            <h2>Listas</h2>
+            <h3>Lista no ordenada</h3>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+                <li>Elemento C</li>
+            </ol>
+            <h3>Lista de definición</h3>
+            <dl>
+                <dt>Elemento 1</dt>
+                <dd>Descripción del elemento 1</dd>
+                <dt>Elemento 2</dt>
+                <dd>Descripción del elemento 2</dd>
+                <dt>Elemento 3</dt>
+                <dd>Descripción del elemento 3</dd>
+            </dl>
+        </section>
+
+        <!-- Formulario -->
+        <section id="formulario">
+            <h2>Formulario</h2>
+            <form action="#" method="get">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Escribe tu correo">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="pais">País</label>
+                    <select id="pais" name="pais">
+                        <option value="espana">España</option>
+                        <option value="mexico">México</option>
+                        <option value="argentina">Argentina</option>
+                    </select>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Contenido Complementario -->
+    <aside>
+        <h2>Contenido Complementario</h2>
+        <p>Esta es una sección de contenido adicional, como noticias o imágenes relacionadas.</p>
+        <img src="./img/6000_4_01.jpg" alt="gatito espacial" width="300px">
+        <img src="https://via.placeholder.com/300" width="300px" alt="Imagen de ejemplo 2">
+    </aside>
+
+    <!-- Pie de página -->
+    <footer id="footer">
+        <p>Lenguajes de Marcas. &reg;IES Trafalgar</p>
+    </footer>
+</body>
+</html>
