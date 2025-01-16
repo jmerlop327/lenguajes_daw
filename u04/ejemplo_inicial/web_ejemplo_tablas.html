@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style type="text/css">
+        body {
+            font-size: 1.5em;
+        }
+        table {
+            border: 2px solid black;
+            border-spacing: 0;
+            width: 50%;
+            float: left;
+        }
+        td {
+            border: 2px solid black;
+        }
+        h1 {
+            background-color: blueviolet;
+            width: 10%;
+            font-size: 1em;
+        }
+        a {
+            display: block;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 3em;">tabla</h1>
+    <a href="www.google.com">enlace a google</a><a href="www.google.com">enlace a google</a><a href="www.google.com">enlace a google</a>
+    <table>
+        <caption>tabla ejemplo</caption>
+        <!-- table row-->
+        <tr>
+            <!-- table description-->
+            <td>celda 1</td>
+            <td>celda 2</td>
+            <td>celda 3</td>
+        </tr>
+        <tr>
+            <td><a href="www.google.com">enlace a google</a></td>
+            <td>celda 5</td>
+            <td rowspan="3" style="background-color: red;">celda 8</td>
+        </tr>
+        <tr>
+            <td colspan="2">celda 7</td>
+        </tr>
+        <tr>
+            <td style="background-color: aqua;" colspan="3">celda 9</td>
+        </tr>
+    </table>
+    <h1>final tabla</h1>
+</body>
+</html>
