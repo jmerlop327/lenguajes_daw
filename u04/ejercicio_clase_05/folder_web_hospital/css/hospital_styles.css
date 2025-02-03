@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    display: grid;
+    /* Otra forma de hacerlo
+    grid-template-columns: ;
+    grid-template-rows: ;
+    */
+    grid-template-areas: 
+    "cabecera cabecera"
+    "contenido menu"
+    "pie pie"
+    ;
+}
+
+header {
+    grid-area: cabecera;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+header img {
+    height: 150px;
+}
+header h1 {
+    font-family: 'Courier New';
+    color: cornflowerblue;
+    font-size: 8em;
+}
+main {
+    grid-area: contenido;
+}
+aside {
+    grid-area: menu;
+}
+footer {
+    grid-area: pie;
+}
