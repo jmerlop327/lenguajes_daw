@@ -11,8 +11,9 @@
     <h1>Calculadora de letra del DNI</h1>
     <form id="dniForm">
         <label for="dni">Número de DNI (sin letra):</label>
-        <input type="text" id="dni" name="dni" required />
-        <button type="button" onclick="generaLetraDni()">Generar DNI</button>
+        <input type="text" id="dni" name="dni" onchange="numeroCambiado()" required />
+        <button disabled type="button" onclick="generaLetraDni()">Generar DNI</button>
+        <input class="activo" type="submit" value="submit">
     </form>
     <p id="resultado"></p>
 </body>

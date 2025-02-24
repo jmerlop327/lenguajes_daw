@@ -1,0 +1,9 @@
+.activo {
+    background-color: lightblue;
+    color: black;
+}
+
+button {
+    background-color: rgb(240, 240, 240);
+    color: lightgray;
+}

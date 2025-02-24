@@ -1,4 +1,5 @@
 function generaLetraDni() {
+    alert("entra");
     let elementoInput = document.getElementById("dni");
     let elementoRes = document.getElementById("resultado");
     let numeroDni = elementoInput.value;
@@ -11,4 +12,14 @@ function generaLetraDni() {
         respuesta = numeroDni + letra;
     }
     resultado.innerHTML = respuesta;
+    let elementoBoton = document.getElementsByTagName("button")[0];
+    elementoBoton.classList.remove("activo");
+    elementoBoton.setAttribute("disabled", "true");
+}
+
+function numeroCambiado() {
+    let elementoBoton = document.getElementsByTagName("button")[0];
+    elementoBoton.classList.add("activo");
+    elementoBoton.removeAttribute("disabled")
+    console.log(elementoBoton);
 }
