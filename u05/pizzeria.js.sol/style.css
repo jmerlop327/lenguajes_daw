@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #ccc;
+}
+
+body {
+    background: #FFF;
+    margin: 35px;
+    padding: 35px;
+    border-radius: 4px;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: dimgrey;
+    font-size: 3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+img.pizza {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+
+main.grid-pizzas {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    @media (max-width:1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (max-width:780px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width:540px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+main div {
+    text-align: center;
+}

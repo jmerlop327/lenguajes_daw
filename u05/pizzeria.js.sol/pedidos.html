@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        footer {
+            background-color: #ccc;
+            color: blueviolet;
+            padding: 20px;
+            text-align: right;
+            font-family: Arial, sans-serif;
+            font-weight: bolder;
+        }
+
+        footer a {
+            color: #0f1775;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <a href="index.html">
+            <img src="img/logo.png" alt="logo pizzeria">
+        </a>
+        <h1>Pizzería Trafalgar</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="#"><li>PRINCIPAL</li></a>
+            <a href="#"><li>CARTA</li></a>
+            <a href="./pedidos.html"><li>PEDIDOS</li></a>
+        </ul>
+    </nav>
+
+
+    <!-- Contenido -->
+    <main class="grid-container">
+        <form action="#">
+            <!--campo de texto largo para la direccion-->
+            <!--campo de texto para el telf-->
+            <!--campo de selección donde estén las pizzas disponibles-->
+            <!--boton para pedir-->
+
+            <!--
+                validar dirección - telf y al menos una pizza
+                elegir cantidad
+                calcular precio
+                a más pizzas al pedido
+            -->
+        </form>
+    </main>
+    <footer>
+        <p>
+            <i class="fas fa-map-marker-alt icon"></i>
+            Dirección: Calle Madrid 4, Trafalgar
+        </p>
+        <p>
+            <i class="fas fa-phone-square"></i>
+            Teléfono: <a href="tel:668865990">668 865 990</a>
+        </p>
+        <p>¡Haz tu pedido a domicilio y disfruta de la mejor pizza!</p>
+    </footer>
+
+</body>
+
+</html>
