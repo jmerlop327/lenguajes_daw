@@ -35,7 +35,9 @@ img.pizza {
     height: auto;
     padding: 5px;
 }
-
+.error {
+    background-color: red;
+}
 
 main.grid-pizzas {
     width: 80%;
