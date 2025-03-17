@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de alumnos</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: lightsteelblue;
+        }
+
+        #error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript">
+        function limpiaError() {
+            const TEXTO_ERROR = document.getElementById("error");
+            TEXTO_ERROR.innerHTML = "";
+        }
+        function aniadirAlumno() {
+            const TEXTO_ERROR = document.getElementById("error");
+            const TABLE_HEADER = "<tr><th>Nombre</th><th>Apellidos</th></tr>";
+            let campoNombre = document.getElementById("nombre");
+            let campoApellidos = document.getElementById("nombre");
+            let nombre = campoNombre.value.trim();
+            let apellidos = campoApellidos.value.trim();
+            let tabla = document.getElementsByTagName("table")[0];
+            let elemTablaVacia = document.getElementById("tablaVacia");
+            if (nombre.length > 0 && apellidos.length > 0) {
+                let nuevaFila = "<tr><td>" + nombre + "</td><td>" + apellidos + "</td></tr>";
+                if (null != elemTablaVacia && "No hay alumnos" === elemTablaVacia.innerText) {
+                    tabla.innerHTML = TABLE_HEADER + nuevaFila;
+                } else {
+                    tabla.innerHTML += nuevaFila;
+                }
+            } else {
+                TEXTO_ERROR.innerHTML = "Los campos nombre y apellidos deben estar rellenos."
+            }
+            document.getElementById("alumnoForm").reset();
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Introduce el alumno</h1>
+    <form id="alumnoForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" onkeypress="limpiaError()">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" onkeypress="limpiaError()">
+        <button type="button" onclick="aniadirAlumno()">Añadir alumno</button>
+    </form>
+    <p id="error"></p>
+    <h1>Lista de alumnos</h1>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+        </tr>
+        <tr>
+            <td colspan="2" id="tablaVacia">No hay alumnos</td>
+        </tr>
+    </table>
+</body>
+
+</html>
