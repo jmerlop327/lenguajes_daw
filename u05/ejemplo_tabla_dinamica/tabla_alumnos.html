@@ -33,10 +33,8 @@
         function aniadirAlumno() {
             const TEXTO_ERROR = document.getElementById("error");
             const TABLE_HEADER = "<tr><th>Nombre</th><th>Apellidos</th></tr>";
-            let campoNombre = document.getElementById("nombre");
-            let campoApellidos = document.getElementById("nombre");
-            let nombre = campoNombre.value.trim();
-            let apellidos = campoApellidos.value.trim();
+            let nombre = document.getElementById("nombre").value.trim();
+            let apellidos = document.getElementById("apellidos").value.trim();
             let tabla = document.getElementsByTagName("table")[0];
             let elemTablaVacia = document.getElementById("tablaVacia");
             if (nombre.length > 0 && apellidos.length > 0) {
