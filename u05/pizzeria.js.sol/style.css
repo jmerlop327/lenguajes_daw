@@ -38,6 +38,9 @@ img.pizza {
 .error {
     background-color: red;
 }
+.pizza_pedido {
+    display: flex;
+}
 
 main.grid-pizzas {
     width: 80%;

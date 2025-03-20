@@ -19,7 +19,9 @@
         th {
             background-color: lightsteelblue;
         }
-
+        input.error {
+            border: solid 3px red;
+        }
         #error {
             color: red;
             font-weight: bold;
@@ -28,6 +30,8 @@
     <script type="text/javascript">
         function limpiaError() {
             const TEXTO_ERROR = document.getElementById("error");
+            document.getElementById("nombre").classList.remove("error");
+            document.getElementById("apellidos").classList.remove("error");
             TEXTO_ERROR.innerHTML = "";
         }
         function aniadirAlumno() {
@@ -44,10 +48,21 @@
                 } else {
                     tabla.innerHTML += nuevaFila;
                 }
+                document.getElementById("alumnoForm").reset();
             } else {
+                const inputNombre = document.getElementById("nombre");
+                const inputApellidos = document.getElementById("apellidos");
+                if (nombre.length <= 0 && apellidos.length > 0) {
+                    inputNombre.classList.add("error");
+                } else if (nombre.length > 0 && apellidos.length <= 0) {
+                    inputApellidos.classList.add("error");
+                } else {
+                    inputNombre.classList.add("error");
+                    inputApellidos.classList.add("error");
+                }
                 TEXTO_ERROR.innerHTML = "Los campos nombre y apellidos deben estar rellenos."
             }
-            document.getElementById("alumnoForm").reset();
+            
         }
     </script>
 </head>
@@ -56,9 +71,9 @@
     <h1>Introduce el alumno</h1>
     <form id="alumnoForm">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" onkeypress="limpiaError()">
+        <input type="text" class="clase3 clase4 clase5" id="nombre" onkeypress="limpiaError()">
         <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" onkeypress="limpiaError()">
+        <input type="text" class="clase1 clase2" id="apellidos" onkeypress="limpiaError()">
         <button type="button" onclick="aniadirAlumno()">Añadir alumno</button>
     </form>
     <p id="error"></p>

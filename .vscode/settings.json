@@ -1,3 +1,7 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "workbench.externalBrowser": "chrome",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "editor.hover.sticky": true,
+    "editor.stickyScroll.enabled": false
 }
