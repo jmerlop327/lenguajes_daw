@@ -24,40 +24,6 @@ function validaForm() {
     }
     return valid;
 }
-function calcularPrecio() {
-    const precioBbq = 9.9;
-    const precioCarbo = 8.75;
-    const precioDeLaHuerta = 7.95;
-    const precio4Quesos = 8.25;
-    let pizza = document.getElementById("pizza").value;
-    let cantidad = Number(document.getElementById("cantidad").value);
-    let precio = 0;
-    if (isNaN(cantidad)) {
-        //TODO: gestionar error e informar al usuario
-    } else {
-        switch (pizza) {
-            case "barbacoa":
-                precio = precioBbq;
-                break;
-            case "carbonara":
-                precio = precioCarbo;
-                break;
-            case "cuatroquesos":
-                precio = precio4Quesos;
-                break;
-            case "delahuerta":
-                precio = precioDeLaHuerta;
-                break;
-            default:
-                //TODO: gestionar error e informar al usuario
-                break;
-        }
-        precio *= cantidad;
-    }
-    let precioTotal = document.getElementById("precioTotal");
-    precioTotal.innerHTML = "" + precio + " €";
-}
-
 function aniadirPizza() {
     contador++;
     let bloquePizza = '<div id="pizza_pedido_' + contador + '" class="pizza_pedido">' +
@@ -74,5 +40,50 @@ function aniadirPizza() {
         '<input type="number" id="cantidad_' + contador + '" name="cantidad_' + contador + '" onchange="calcularPrecio()" min="1" max="10" required>' +
         '</label>' +
         '</div>';
-    document.getElementById("pizzas").innerHTML += bloquePizza;
+        /*
+        Cambiamos a la siguiente línea para no perder los datos ya existentes
+        document.getElementById("pizzas").innerHTML += bloquePizza;
+        */
+        document.getElementById("pizzas").insertAdjacentHTML('beforeend', bloquePizza);
+}
+
+function calcularPrecio() {
+    
+    const precioBbq = 9.9;
+    const precioCarbo = 8.75;
+    const precioDeLaHuerta = 7.95;
+    const precio4Quesos = 8.25;
+    let total = 0;
+    const pizzas = document.getElementsByClassName("pizza_pedido");
+
+    for (let i = 0; i < pizzas.length; i++) {
+        const select = pizzas[i].querySelector("select");
+        const inputCantidad = pizzas[i].querySelector("input[type=number]");
+        
+        const pizzaSeleccionada = select.value;
+        const cantidad = parseInt(inputCantidad.value) || 0;
+
+        switch (pizzaSeleccionada) {
+            case "barbacoa":
+                precio = precioBbq;
+                break;
+            case "carbonara":
+                precio = precioCarbo;
+                break;
+            case "cuatroquesos":
+                precio = precio4Quesos;
+                break;
+            case "delahuerta":
+                precio = precioDeLaHuerta;
+                break;
+            default:
+                //TODO: gestionar error e informar al usuario
+                break;
+        }
+
+        total += precio * cantidad;
+    }
+
+    let precioTotal = document.getElementById("precioTotal");
+    precioTotal.innerHTML = "" + total + " €";
 }

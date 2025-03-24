@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script type="text/javascript" src="pedidos.js"></script>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         footer {
             background-color: #ccc;
             color: blueviolet;
@@ -41,8 +47,7 @@
         label,
         input,
         select,
-        textarea,
-        button {
+        textarea {
             margin-bottom: 10px;
             padding: 8px;
             font-size: 16px;
@@ -53,10 +58,28 @@
             color: white;
             border: none;
             cursor: pointer;
+            padding: 10px;
+            margin: 5px
         }
 
         button:hover {
             background-color: darkviolet;
+        }
+
+        #precio_aniadir {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #precio {
+            border: blueviolet 2px solid;
+            padding: 5px;
+        }
+
+        #precio p {
+            margin: 0;
         }
     </style>
 </head>
@@ -94,22 +117,25 @@
             <div id="pizzas">
                 <div id="pizza_pedido_1" class="pizza_pedido">
                     <label for="pizza_1">Selecciona tu pizza:
-                    <select id="pizza_1" name="pizza_1" onchange="calcularPrecio()">
-                        <option value="">Elige tu pizza</option>
-                        <option value="barbacoa">Barbacoa (9,90 €)</option>
-                        <option value="carbonara">Carbonara (8,75 €)</option>
-                        <option value="cuatroquesos">Cuatro Quesos (8,25 €)</option>
-                        <option value="delahuerta">De la huerta (7,95 €)</option>
-                    </select>
-                </label>
+                        <select id="pizza_1" name="pizza_1" onchange="calcularPrecio()">
+                            <option value="">Elige tu pizza</option>
+                            <option value="barbacoa">Barbacoa (9,90 €)</option>
+                            <option value="carbonara">Carbonara (8,75 €)</option>
+                            <option value="cuatroquesos">Cuatro Quesos (8,25 €)</option>
+                            <option value="delahuerta">De la huerta (7,95 €)</option>
+                        </select>
+                    </label>
                     <label for="cantidad_1">Cantidad:
-                    <input type="number" id="cantidad_1" name="cantidad_1" onchange="calcularPrecio()" min="1" max="10" required>
-                </label>
+                        <input type="number" id="cantidad_1" name="cantidad_1" onchange="calcularPrecio()" min="1"
+                            max="10" required>
+                    </label>
                 </div>
             </div>
-            <div>
-                <p>Precio pedido</p>
-                <p>XX €</p>
+            <div id="precio_aniadir">
+                <div id="precio">
+                    <p>Precio pedido</p>
+                    <p id="precioTotal">0 €</p>
+                </div>
                 <button type="button" onclick="aniadirPizza()">Añadir otra pizza</button>
             </div>
             <!--campo de texto largo para la direccion-->
@@ -125,9 +151,10 @@
             -->
             <button type="submit">Hacer pedido</button>
             <button type="reset">reset</button>
+            <!--
             <button type="button" onclick="calcularPrecio()">calcular precio</button>
+        -->
         </form>
-        <p id="precioTotal"></p>
     </main>
 
     <footer>
