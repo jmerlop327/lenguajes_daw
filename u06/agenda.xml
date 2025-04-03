@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda>
+    <propietario>
+        <identificadores>
+            <nombre>Alma</nombre>
+            <apellidos>López Terán</apellidos>
+        </identificadores>
+        <direccion>
+            <calle>El Percebe 13, 6F</calle>
+            <localidad>Torrelavega</localidad>
+            <cp>39300</cp>
+        </direccion>
+        <telefonos>
+            <movil>970898765</movil>
+            <casa>942124567</casa>
+            <trabajo>628983456</trabajo>
+        </telefonos>
+    </propietario>
+    <contactos>
+        <persona id="p01">
+            <identificadores>
+                <nombre>Inés</nombre>
+                <apellidos>López Pérez</apellidos>
+            </identificadores>
+            <direccion>
+                <calle>El Ranchito 24, 6B</calle>
+                <localidad>Santander</localidad>
+                <cp>39006</cp>
+            </direccion>
+            <telefonos>
+                <movil>970123123</movil>
+            </telefonos>
+        </persona>
+        <persona id="p02">
+            <identificadores>
+                <nombre>Roberto</nombre>
+                <apellidos>Gutiérrez Gómez</apellidos>
+            </identificadores>
+            <direccion>
+                <calle>El Marranito 4, 2F</calle>
+                <localidad>Santander</localidad>
+                <cp>39004</cp>
+            </direccion>
+            <telefonos>
+                <movil>970987456</movil>
+                <casa>942333323</casa>
+            </telefonos>
+        </persona>
+        <persona id="p03">
+            <identificadores>
+                <nombre>Juan</nombre>
+                <apellidos>Sánchez Martínez</apellidos>
+            </identificadores>
+            <direccion>
+                <calle>El Cangrejo 10, sn</calle>
+                <localidad>Torrelavega</localidad>
+                <cp>39300</cp>
+            </direccion>
+            <telefonos>
+                <movil>997564343</movil>
+                <casa>942987974</casa>
+                <trabajo>677899234</trabajo>
+            </telefonos>
+        </persona>
+    </contactos>
+</agenda>
