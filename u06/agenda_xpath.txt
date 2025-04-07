@@ -1,0 +1,31 @@
+--Nombre del propietario de la agenda.
+/agenda/propietario/identificadores/nombre
+//propietario//nombre
+--Teléfono de la casa del propietario
+/agenda/propietario/telefonos/casa
+//propietario//casa
+--Nombre y apellidos del propietario de la agenda.
+//propietario/identificadores
+//propietario//nombre | //propietario//apellidos
+--Nombre e identificador(id) de cada contacto
+//contactos/persona/identificadores/nombre | //contactos/persona/@id
+--Datos del contacto con identificador p02 ==> id="p02" -- Me devuelve toda la estructura del elemento persona
+//contactos/persona[@id="p02"]
+--Nombre del contacto con identificador p02 ==> id="p02"
+//contactos/persona[@id="p02"]/identificadores/nombre
+//persona[@id="p02"]//nombre
+--Nombres de los contactos que tienen teléfono en casa
+//contactos//telefonos/casa/../../identificadores/nombre
+--Id de los contactos que tienen teléfono en casa
+//contactos//telefonos/casa/../../@id
+--Id de las personas que se llaman Inés
+//contactos/persona/identificadores[nombre="Inés"]/../@id
+--Teléfono móvil de la persona que se llama Inés
+//contactos/persona/identificadores[nombre="Inés"]/../telefonos/movil
+//contactos/persona/identificadores/nombre[.="Inés"]/../../telefonos/movil
+--Id de los contactos (personas) que viven en la localidad de Santander
+//contactos/persona/direccion[localidad="Santander"]/../@id
+//contactos/persona[./direccion[localidad="Santander"]]/@id
+--Nombre y apellidos de los contactos (personas) que viven en la localidad de santander
+//contactos/persona/direccion[localidad="Santander"]/../identificadores/nombre | //contactos/persona/direccion[localidad="Santander"]/../identificadores/apellidos
+//contactos/persona[./direccion[localidad="Santander"]]//nombre | //contactos/persona[./direccion[localidad="Santander"]]//apellidos
