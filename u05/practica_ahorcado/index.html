@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Juego del ahorcado</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>JUEGO DEL AHORCADO</h2>
+    <h2>PALABRA A ADIVINAR</h2>
+    <input type="text" class="letras" readonly>
+    <input type="text" class="letras" readonly>
+    <input type="text" class="letras" readonly>
+    <input type="text" class="letras" readonly>
+    <input type="text" class="letras" readonly>
+    <input type="text" class="letras" readonly>
+    <input type="text" class="letras" readonly>
+    <p>
+        LETRA
+        <input type="text" id="letra" onkeypress="limpiarError()">
+        <button id="comprobar" onclick="comprobarLetra()">COMPROBAR</button>
+    </p>
+    <button id="comenzar" onclick="comenzar()">COMENZAR</button>
+    <div id="puntuacion">
+        <p id="errores"></p>
+        <p id="mensajes"></p>
+        <p>Puntuación Actual: <span id="pActual">0</span></p>
+        <p>Puntuación última Jugada: <span id="pUltima">0</span></p>
+        <p>Puntuación Máxima: <span id="pMax">0</span></p>
+        <p>Num Fallos actuales: <span id="fallos">0</span></p>
+        <p>Num Fallos permitidos: <span id="fPermitidos">0</span></p>
+        <p>Palabras restantes en el juego: <span id="palabrasRestantes">20</span></p>
+        <p>Letras usadas:<span id="letrasUsadas"></span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
