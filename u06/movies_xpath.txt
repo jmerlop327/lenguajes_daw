@@ -1,0 +1,38 @@
+1. Títulos de las películas con review="5"
+/movies/movie[@review="5"]/title
+//movie[@review="5"]/title
+2.	Títulos de las películas con review 5 y del año 1992 (necesario operador and)
+//movie[@review="5" and @year="1992"]/title
+3.	 Títulos de las películas cuyo año sea par (necesario operador mod)
+//movie[@year mod 2 = 0]/title
+4.	 Título de la segunda película
+//movie[position() = 2]
+//movie[2]
+5. Títulos de las películas en las que ha intervenido el actor Nicolas Cage (text()=‘Nicolas Cage’)
+//movie[actor="Nicolas Cage"]/title
+//movie/actor[text() ="Nicolas Cage"]/../title
+6. Actores que han trabajado con el actor Nicolas Cage en alguna película, incluido el propio Nicolas Cage
+//movie[actor="Nicolas Cage"]/actor
+7. Actores que han trabajado con el actor Nicolas Cage en alguna película, excluido el propio Nicolas Cage
+//movie[actor="Nicolas Cage"]/actor[text()!="Nicolas Cage"]
+//movie[actor="Nicolas Cage"]/actor[.!="Nicolas Cage"]
+//movie[actor="Nicolas Cage"]/actor[not(text() = "Nicolas Cage")]
+8. Productores que han producido películas del anio 1992
+//movie[@year="1992"]/producer
+9. Título de las  películas comedia interpretadas por Nicolas Cage (operador and)
+//movie[@type="comedy" and actor="Nicolas Cage"]/title
+9b. Título de las  películas comedia donde el nombre del productor sea Natalie (operador and)
+//movie[@type="comedy" and producer/name="Natalie"]/title
+10. Títulos de las películas con tres o más actores (función count())
+//movie[count(actor)>=3]
+11.	Titulo de las películas con tres actores  
+//movie[count(actor)=3]
+12.	Titulo de las películas que tienen un productor apellidado Wood (función contains())
+//movie[producer/surname="Wood" or contains(producer, "Wood")]/title
+13.	 Título de la última película (función last())
+//movie
+14.	Todos los títulos de las películas excepto de la ultima (funciones not(), position() y last())
+15.	Todos los elementos que contengan el atributo year
+16.	Todos los títulos de las películas que no contengan  subelemento comments (función not()))
+17.	Todos los nodos actor o director. (uso de | )
+18.	Titulo de las películas donde participe algún miembro de la familia Coen (uso de función contains())
