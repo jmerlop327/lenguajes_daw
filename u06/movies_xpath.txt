@@ -30,9 +30,16 @@
 12.	Titulo de las películas que tienen un productor apellidado Wood (función contains())
 //movie[producer/surname="Wood" or contains(producer, "Wood")]/title
 13.	 Título de la última película (función last())
-//movie
+//movie[last()]/title
 14.	Todos los títulos de las películas excepto de la ultima (funciones not(), position() y last())
+//movie[not(position()=last())]/title
 15.	Todos los elementos que contengan el atributo year
+//*[@year]
 16.	Todos los títulos de las películas que no contengan  subelemento comments (función not()))
+//movie[not(comments)]/title
 17.	Todos los nodos actor o director. (uso de | )
+//actor | //director
 18.	Titulo de las películas donde participe algún miembro de la familia Coen (uso de función contains())
+//movie[contains(actor, 'Coen') or contains(director, 'Coen') or contains(writer, 'Coen') or contains(producer, 'Coen') or contains(producer/name, 'Coen') or contains(producer/surname, 'Coen')]/title
+
+
