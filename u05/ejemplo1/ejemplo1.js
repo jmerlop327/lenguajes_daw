@@ -1,20 +1,27 @@
+let elementoBoton;
+let elementoEleccion;
 window.onload = function () {
-    let nombre = "";
-    let elemento = document.getElementById("respuesta");
-    nombre = prompt("Introduce tu nombre", "amigo");
-    if (null == nombre) {
-        alert("Hola, no introdujiste ningún nombre");
-        elemento.classList.add("rojo");
-    } else {
-        alert("Hola " + nombre);
-        elemento.classList.add("verde");
+    elementoBoton = document.getElementById("boton");
+    elementoEleccion = document.getElementById("eleccion");
+    let color = prompt("de qué color quieres el botón", "");
+    elementoBoton.classList.add(color);
+    elementoEleccion.textContent = "El primer color elegido ha sido: " + color;
+    elementoEleccion.classList.add(color);
+}
+function cambiaColor() {
+    elementoBoton = document.getElementById("boton");
+    let clases = elementoBoton.classList;
+    if (clases.contains("rojo")) {
+        clases.remove("rojo");
+        clases.add("verde");
+    } else if (clases.contains("verde")) {
+        clases.remove("verde");
+        clases.add("amarillo");
+    } else if (clases.contains("amarillo")) {
+        clases.remove("amarillo");
+        clases.add("azul");
+    } else if (clases.contains("azul")) {
+        clases.remove("azul");
+        clases.add("rojo");
     }
-
-    if (confirm("Es correcto tu nombre?")) {
-        alert("Perfecto!");
-    } else {
-        alert("Oh, lo siento!");
-    }
-
-    elemento.innerHTML = "Página de ejemplo de " + nombre;
-};
+}

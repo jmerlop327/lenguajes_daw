@@ -6,18 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo 1 javascript</title>
     <style type="text/css">
+        button {
+            height: 12em;
+            width: 20%;
+            margin: 50px;
+        }
         .rojo {
-            color: red;
+            background-color: red;
         }
         .verde {
-            color: green;
+            background-color: green;
+        }
+        .amarillo {
+            background-color: yellow;
+        }
+        .azul {
+            background-color: blue;
         }
     </style>
     <script type="text/javascript" src="./ejemplo1.js"></script>
 </head>
 
 <body>
-    <h1 class="nada" id="respuesta">página de ejemplo</h1>
+    <p id="eleccion"></p>
+    <button class="" id="boton" onclick="cambiaColor()">cambia color</button>
+    
 </body>
 
 </html>
