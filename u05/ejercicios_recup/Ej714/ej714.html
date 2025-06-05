@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej714</title>
+    <script type="text/javascript" src="./script714.js"></script>
+    <style>
+        p{
+            color: greenyellow;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Suscripción</h1>
+    <form>
+        <label for="nombre">
+            Nombre:
+            <input type="text" name="nombre" id="nombre" />
+        </label>
+        <label for="anio">
+            Año de nacimiento:
+            <input type="number" name="anio" id="anio" />
+        </label>
+        <label for="opciones">
+            Opciones:
+            <select name="opciones" id="opciones">
+                <option>Selecciona una opción:</option>
+                <option value="inf">Infantil</option>
+                <option value="juv">Juvenil</option>
+                <option value="adul">Adulto</option>
+            </select>
+        </label>
+        <!--
+        Problema ocurrido en clase: El nombre enviar coincide con el id del botón (id="enviar"). En algunos navegadores, los elementos con un id crean una
+        variable global con ese nombre automáticamente, lo que puede sobrescribir la función enviar en el ámbito global. Cuando el navegador intenta ejecutar
+        enviar(), en lugar de llamar a la función, encuentra el elemento HTML con id="enviar", que no es una función, causando el error.
+        Solución: Cambiar el nombre de la función o el id del botón para evitar el conflicto. En este caso hemos optado por cambiar ambos.
+        -->
+        <br/>
+        <input type="button" id="btnEnviar" onclick="enviarDatos()" value="Enviar" />
+        <br/>
+        <p id="avisos"></p>
+    </form>
+</body>
+
+</html>
