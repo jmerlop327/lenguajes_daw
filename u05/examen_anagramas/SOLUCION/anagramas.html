@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Anagramas</title>
+    <link rel="stylesheet"  type="text/css" href="./estilo.css">
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Anagramas</h1>
+        <button id="comenzar" onclick="comenzarJuego()">Comenzar</button>
+        
+        <div class="game-area">
+            <h2>Palabra mezclada:</h2>
+            <p id="anagrama"></p> <!-- Aquí se mostrará la palabra mezclada -->
+
+            <label for="respuesta">Tu respuesta:</label>
+            <input type="text" id="respuesta">
+            <button id="comprobar" onclick="verificarRespuesta()">Comprobar</button>
+        </div>
+
+        <div class="info">
+            <p>Intentos restantes: <span id="intentosRest"></span></p>
+            <p>Puntuación actual: <span id="pActual"></span></p>
+            <p>Puntuación máxima: <span id="pMax"></span></p>
+            <p>Palabras restantes: <span id="palabrasRestantes"></span></p>
+        </div>
+
+        <div class="messages">
+            <p id="mensaje"></p> <!-- Aquí se mostrarán mensajes como "¡Correcto!" o "Prueba otra vez" -->
+        </div>
+    </div>
+
+</body>
+</html>

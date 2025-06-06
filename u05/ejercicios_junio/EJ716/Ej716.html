@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 716</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            ;
+        }
+    </style>
+    <script type="text/javascript">
+        let numConversion = 0;
+        function convertirCantidad(tipoCambio) {
+            let cantidad = document.getElementById("inputCantidad").value;
+            let conversion;
+            let valorEuDol = 1.15;
+            //1€ = 1.15$
+            if (tipoCambio === "eu-doll") {
+                //cambiamos de euros a dolares
+                conversion = cantidad * valorEuDol;
+                numConversion++;
+                //paso 1. mostrando alert
+                //alert("Has convertido " + cantidad + "€ a " + conversion +"$");
+                //paso 2. mostrando texto en pantalla
+                //let pRespuesta = document.getElementById("conversionRespuesta");
+                //pRespuesta.textContent = "Has convertido " + cantidad + "€ a " + conversion +"$";
+                //paso 3. mostrando tabla
+                //let contenedorTabla = document.getElementById("contenedorTabla");
+                //const tabla = '<table><thead><tr><th>€ Euros</th><th>$ Dólares</th></tr></thead><tbody><tr><td id="tdEuros"></td><td id="tdDolares"></td></tr></tbody></table>';
+                // contenedorTabla.innerHTML = tabla;
+                // document.getElementById("tdEuros").textContent = cantidad;
+                // document.getElementById("tdDolares").textContent = conversion;
+                //paso 4. mostrando tabla con histórico
+                let contenedorTabla = document.getElementById("contenedorTabla");
+                let tabla = '<table><thead><tr><th>Número conversión</th><th>€ Euros</th><th>$ Dólares</th></tr></thead><tbody id="cuerpoTabla"><tr><td id="tdNumConv' + numConversion + '"></td><td id="tdEuros' + numConversion + '"></td><td id="tdDolares' + numConversion + '"></td></tr></tbody></table>';
+                let fila = '<tr><td id="tdNumConv' + numConversion + '"></td><td id="tdEuros' + numConversion + '"></td><td id="tdDolares' + numConversion + '"></td></tr>';
+                if (numConversion == 1) {
+                    //Mostramos la tabla por 1ª vez
+                    contenedorTabla.innerHTML = tabla;
+                    document.getElementById("tdNumConv1").textContent = numConversion;
+                    document.getElementById("tdEuros1").textContent = cantidad;
+                    document.getElementById("tdDolares1").textContent = conversion;
+                } else {
+                    //Añadimos una fila a la tabla
+                    let cuerpo = document.getElementById("cuerpoTabla");
+                    cuerpo.innerHTML += fila;
+                    document.getElementById("tdNumConv" + numConversion).textContent = numConversion;
+                    document.getElementById("tdEuros" + numConversion).textContent = cantidad;
+                    document.getElementById("tdDolares" + numConversion).textContent = conversion;
+                }
+            } else if (tipoCambio === "doll-eu") {
+                //cambiamos de dolares a euros
+                conversion = cantidad / valorEuDol;
+                numConversion++;
+                alert("Has convertido " + cantidad + "$ a " + conversion + "$€");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Cambio de moneda</h1>
+    <input type="number" id="inputCantidad" placeholder="Introduce la cantidad a convertir" />
+    <input type="button" value="€ -> $" onclick="convertirCantidad('eu-doll')" />
+    <input type="button" value="$ -> €" onclick="convertirCantidad('doll-eu')" />
+    <br />
+    <p id="conversionRespuesta"></p>
+    <div id="contenedorTabla">
+    </div>
+</body>
+
+</html>

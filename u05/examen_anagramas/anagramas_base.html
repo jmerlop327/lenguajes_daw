@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Anagramas</title>
+</head>
+
+<body>
+    <h1>Juego de Anagramas</h1>
+    <h2>Palabra mezclada:</h2>
+    <!-- Aquí se muestra el anagrama -->
+    <p id="anagrama"></p>
+
+    <form id="anagrama-form">
+        <label for="respuesta">Tu respuesta:</label>
+        <input type="text" id="respuesta">
+        <input type="submit" value="comprobar" id="comprobar">
+    </form>
+
+    <div class="info">
+        <!-- Intentos restantes para acertar el anagrama actual -->
+        <p>Intentos restantes: <span id="intentos">2</span></p>
+        <!-- Puntuación de la partida actual -->
+        <p>Puntuación actual: <span id="pActual">2</span></p>
+        <!-- Puntuación máxima histórica del juego -->
+        <p>Puntuación máxima: <span id="pMax">10</span></p>
+        <!-- Palabras restantes para acabar la partida (5 cada partida) -->
+        <p>Palabras restantes: <span id="palabrasRestantes">4</span></p>
+    </div>
+
+    <div class="messages">
+        <!-- Aquí se muestran mensajes como "¡Correcto! Has ganado 2 puntos" o "Prueba otra vez!" -->
+        <p id="mensaje"></p>
+    </div>
+</body>
+
+</html>
